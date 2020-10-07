@@ -93,7 +93,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding-top: 100px;
 }
 
 .two-columns {
@@ -104,8 +104,7 @@
 }
 
 .two-columns__brief {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 0;
   padding: 0;
   max-width: 175px;
   width: 100%;
@@ -116,7 +115,6 @@
 }
 
 .two-columns__main-text {
-  margin-top: 100px;
   margin-bottom: 100px;
   min-width: 784px;
   line-height: 34px;
@@ -126,14 +124,14 @@
 }
 
 .two-columns__paragraph {
-  margin: 0;
   padding: 0;
+  margin: 0  0 30px;
 }
 
-p.two-columns__paragraph:nth-child(2) {
-  margin-top: 30px;
-  margin-bottom:30px;
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
+
 
 .two-columns__span-accent {
   line-height: 34px;
@@ -146,18 +144,20 @@ p.two-columns__paragraph:nth-child(2) {
 .digits {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-title {
+  margin:0;
+  padding:0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   width: 60%;
   text-align: center;
-}
-
-.section-title_centered {
-  margin: 0px auto 20px;
+  align-self: center;
+  /* margin: 0px auto 20px;  reset margins at block level, and replaced centering via margins for flex properties*/
 }
 
 .section-subtitle {
@@ -166,22 +166,17 @@ p.two-columns__paragraph:nth-child(2) {
   font-weight: normal;
   width: 60%;
   text-align: center;
-  margin: auto;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  margin: 20px auto 0px;
 }
 
 .table {
   width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .table__cell {
@@ -207,11 +202,11 @@ margin-top: 60px;
 
 .feynman {
   background-color:  #f2f2f2;
-  height: 790px;
+  min-height: 790px;
   margin-top: 100px;
   padding-top: 100px;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .feynman__title {
@@ -234,10 +229,10 @@ margin-top: 60px;
 }
 .feynman__link {
   position: absolute;
+  top: 50%;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  height: 50%;
   right: 48px;
   text-decoration: none;
   color: black;
@@ -259,19 +254,9 @@ margin-top: 60px;
   color: white;
   position: relative;
   overflow: hidden;
-  z-index: -2;
-}
-
-.section-title_theme_dark {
-  margin-top: 0;
-}
-.section-subtitle_theme_dark {
-  width: 60%;
-}
-
-.table_theme_dark {
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .table__cell_theme_dark {
@@ -301,21 +286,23 @@ margin-top: 60px;
   min-height: 350px;
   padding-top: 60px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__columns {
   width: 90%;
-  margin: 0px auto 40px;
+  /* margin: 0px auto 40px;*/
   display: flex;
-  flex-basis: 711px;
   justify-content: space-between;
 }
 
 .footer__column_content_copyright {
   display: flex;
+  flex-basis: 711px;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
 }
 
 .footer__author {
@@ -328,7 +315,6 @@ margin-top: 60px;
 
 .footer__column-heading {
   line-height: 45px;
-  height: 45px;
   padding-top: 0;
   font-size: 18px;
   font-weight: bold;
@@ -337,9 +323,12 @@ margin-top: 60px;
 }
 
 .footer__column-links {
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  list-style-type: none;
 }
 
 .footer__links {
