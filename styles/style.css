@@ -285,15 +285,14 @@ margin-top: 60px;
   color: white;
   min-height: 350px;
   padding-top: 60px;
+  padding-bottom: 40px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .footer__columns {
+  margin: 0 auto;
   width: 90%;
-  /* margin: 0px auto 40px;*/
   display: flex;
   justify-content: space-between;
 }
