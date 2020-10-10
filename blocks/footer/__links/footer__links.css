@@ -2,7 +2,8 @@
   text-decoration: none;
   color: white;
   transition: color 2s ease;
-  }
-  .footer__links:hover {
-  color: rgba(108, 141, 185, 0.39)
-  }
+}
+
+.footer__links:hover {
+  color: rgba(255, 255, 255, 0.39)
+}

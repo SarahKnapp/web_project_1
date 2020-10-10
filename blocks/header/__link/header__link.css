@@ -1,11 +1,9 @@
 .header__link {
-  color:  #2f80ed;
+  color: #2f80ed;
   text-decoration-line: none;
   transition: color 2s ease;
-  }
+}
 
-  .header__link:hover {
-  color: rgba(1, 16, 35, 0.39)
-  }
-
-
+.header__link:hover {
+  color: rgba(47, 128, 237, .5)
+}

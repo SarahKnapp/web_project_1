@@ -8,8 +8,8 @@
   text-decoration: none;
   color: black;
   transition: color 2s ease;
-  }
+}
 
-  .feynman__link:hover {
-  color: rgba(1, 16, 35, 0.39)
-  }
+.feynman__link:hover {
+  color: rgba(0, 0, 0, 0.39)
+}
